@@ -1,31 +1,38 @@
-# 🐍 Python OOP: Operator Overloading (Less Than `<`)
+# Ex 6d:Encapsulation:Display age using a class
 
-## 🎯 AIM
+## AIM
+To write a Python program that creates a class with name and age variables and a method to display the age, then invoke it using an object.
 
-To write a Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class.
+## ALGORITHM
 
----
+1) Start the program.
+2) Create a class pub_mod with variables name and age.
+3) Define a method display() to print the name and age.
+4) Create an object of the class.
+5) Assign values to name and age through the constructor.
+6) Invoke the display method using the object.
+7) End the program.
 
-## 🧠 ALGORITHM
+## Program
+```
+class pub_mod:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-1. **Create Class `A`**:
-   - Define the `__init__()` method to initialize the object with a value `a`.
+    def display(self):
+        print("Name: ", self.name)
+        print("Age: ", self.age)
 
-2. **Overload the `<` Operator**:
-   - Define the `__lt__()` method with logic:
-     - If `self.a < o.a`, return `"ob1 is less than ob2"`
-     - Else, return `"ob2 is less than ob1"`
 
-3. **Create Objects**:
-   - Instantiate two objects `ob1` and `ob2` with values.
+p = pub_mod("Jason", 35)
 
-4. **Use `<` Operator**:
-   - Use `print(ob1 < ob2)` to trigger the overloaded behavior.
+p.display()
 
----
-
-## 💻 Program
+```
 
 ## Output
+<img width="353" height="131" alt="image" src="https://github.com/user-attachments/assets/96ff78c6-7825-4f4e-be04-48a0dff7b5c6" />
 
 ## Result
+Thus, the Python program successfully created a class with name and age variables and displayed the age using a class method invoked through an object.
